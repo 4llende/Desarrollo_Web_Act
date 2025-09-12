@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="auto"> 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Este desarrollo es de mi empresa">
+  <meta name="author" content="Arantza Allende">
+  <title>I T E R N A V E L A</title>
+
+  <!-- Bootstrap CSS desde CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Mi hoja de estilos personalizada -->
+  <link href="styles.css" rel="stylesheet">
+
+  <meta name="theme-color" content="#712cf9">
+</head>
+
+<body> 
+
+  <!-- Barra de navegación -->
+  <header data-bs-theme="dark">
+    <nav class="navbar navbar-expand-md fixed-top mi-navbar">
+     <!--<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">I T E R N A V E L A</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://prezi.com/p/cwzoutl48h8q/iter-navela/">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tel:+527299406821">Contacto</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main>
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <!-- Indicadores -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <!-- Slides -->
+
+      <!-- primer imagen de slide -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg> -->
+
+          <img src="img/transporte.jpg" alt="Primera imagen" width="100%">
+
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>I T E R N A V E L A</h1>
+              <p class="opacity-75">Nuestra empresa te ofrece la confianza de un transporte seguro y especializado para la industria farmacéutica.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://prezi.com/p/cwzoutl48h8q/iter-navela/">Lee más</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- segunda imagen de slide -->
+
+        <div class="carousel-item">
+          <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg> -->
+
+          <img src="img/medicamentos.jpg" alt="Primera imagen" width="100%">
+
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Nuestras especialidades.</h1>
+              <p>Contamos con especialidad en transporte de medicinas.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://polarexpres.es/realizar-transporte-medicamentos/">Descubre más</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- tercera imagen de slide -->
+
+        <div class="carousel-item">
+         <!--  <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+          </svg> -->
+
+          <img src="img/cliente.jpg" alt="Primera imagen" width="100%">
+
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Clientes satisfechos</h1>
+              <p>Nuestros clientes confían en nosotros.</p>
+              <p><a class="btn btn-lg btn-primary" href="https://elfsight.com/wp-content/uploads/2023/04/Fake-review-with-Chris-Hemsworth-photo.jpg">Testimonios</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Controles -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+
+    <!-- Marketing -->
+    <div class="container marketing my-5">
+      <div class="row text-center">
+        <div class="col-lg-4">
+          <img src="img/camion.jpg" class="bd-placeholder-img rounded-circle mb-3" alt="Imagen 1" width="250px" height="250px">
+          <h2 class="fw-normal">Acerca de nosotros</h2>
+          <p>Empresa mexicana con visión emprendedora dedicada al transporte terrestre especializada en la industria farmacéutica.</p>
+          <p><a class="btn btn-secondary" href="https://prezi.com/p/cwzoutl48h8q/iter-navela/">Ver más &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="img/medicina.jpg" class="bd-placeholder-img rounded-circle mb-3" alt="Imagen 2" width="250px" height="250px">
+          <h2 class="fw-normal">Sistemas de calidad</h2>
+          <p>Contamos con un Sistema de Gestión de Calidad ejecutado bajo el apego del marco normativo sanitario que regula la actividad.</p>
+          <p><a class="btn btn-secondary" href="https://prezi.com/p/cwzoutl48h8q/iter-navela/">Ver más &raquo;</a></p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="img/repartir.jpg" class="bd-placeholder-img rounded-circle mb-3" alt="Imagen 3" width="250px" height="250px">
+          <h2 class="fw-normal">Servicios</h2>
+          <p>Brindamos servicio a toda la república Mexicana mediante la distribución de productos en cadena de frío y seco y mensajería (Moto y autos utilitarios) </p>
+          <p><a class="btn btn-secondary" href="https://prezi.com/p/cwzoutl48h8q/iter-navela/">Ver más &raquo;</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featurettes -->
+    <div class="container my-5">
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Almacenaje Premium <span class="text-body-secondary">a tu medida.</span></h2>
+          <p class="lead">Seguridad, eficiencia y confianza en cada espacio.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="img/almacen.jpeg" class="img-fluid mx-auto" alt="Feature 1">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading fw-normal lh-1">Soluciones sin límites para <span class="text-body-secondary">cada necesidad.</span></h2>
+          <p class="lead">Desde lo esencial hasta lo especializado, todo en un solo lugar.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="img/pastillas.jpeg" class="img-fluid mx-auto" alt="Feature 2">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading fw-normal lh-1">Siempre a tu lado <span class="text-body-secondary">en cada experiencia.</span></h2>
+          <p class="lead">Confianza, calidad y atención que te hacen sonreír.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="img/clientes.jpeg" class="img-fluid mx-auto" alt="Feature 3">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+    </div>
+
+    <!-- Footer -->
+    <footer class="container text-center py-4">
+      <p class="float-end"><a href="#">Volver arriba</a></p>
+      <p>&copy; 2025   I T E R N A V E L A &middot; <a href="https://www.sct.gob.mx/transporte-y-medicina-preventiva/medicina-preventiva/avisos-de-privacidad-de-la-dgpmpt/">Privacidad</a> &middot; <a href="https://www.trafimar.com.mx/blog/requisitos-del-transporte-de-productos-farmaceuticos">Términos</a></p>
+    </footer>
+  </main>
+
+  <!-- Bootstrap JS desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
