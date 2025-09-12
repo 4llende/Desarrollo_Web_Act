@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Súrtete</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-light">
+
+  <div class="container py-4">
+    <h1 class="text-center mb-4">Súrtete</h1>
+
+    <div class="row">
+      <!-- Productos -->
+      <div class="col-md-8">
+        <div class="row g-3">
+          <!-- Card Producto 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/agua.jpg" class="card-img-top" alt="Producto 1">
+              <div class="card-body">
+                <h5 class="card-title">Agua Embotellada</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Agua embotellada')">Agregar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Producto 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/chocolate.jpg" class="card-img-top" alt="Producto 2">
+              <div class="card-body">
+                <h5 class="card-title">Chocolate en barra</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Chocolate en barra')">Agregar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Producto 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/frijoles.jpg" class="card-img-top" alt="Producto 3">
+              <div class="card-body">
+                <h5 class="card-title">Frijoles</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Frijoles')">Agregar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Producto 4 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/galletas.jpg" class="card-img-top" alt="Producto 4">
+              <div class="card-body">
+                <h5 class="card-title">Galletas</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Galletas')">Agregar</button>
+              </div>
+            </div>
+          </div>
+          <!-- Card Producto 5 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/papas.jpg" class="card-img-top" alt="Producto 5">
+              <div class="card-body">
+                <h5 class="card-title">Papas fritas</h5>
+                <button class="btn btn-success w-100" onclick="agregarProducto('Papas fritas')">Agregar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carrito -->
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header bg-dark text-white">Carrito</div>
+          <ul class="list-group list-group-flush" id="lista-carrito">
+            <li class="list-group-item text-muted text-center">No hay productos</li>
+          </ul>
+          <div class="card-footer text-center">
+            <button class="btn btn-danger" onclick="eliminarProducto()">Eliminar último producto</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="contacto" class="footer">
+    <div class="footer-content">
+     <!--
+       <footer>: Pie de página con información de contacto, copyright, etc.
+       - Puede usarse también al final de <article> o <section>.
+     -->
+     <address>
+         <!--
+           <address>: Información de contacto (física, email, teléfono).
+           - Los navegadores/SEO lo asocian a datos de ubicación.
+         -->
+
+<a href="https://share.google/OFg04s5I0vL9hTMeN" 
+target="_blank" rel="noreference noopener">Perif. Blvd. Manuel Ávila Camacho 2550  </a>
+
+         <br>
+         Teléfono: <a href="tel:+7299406821">+729 940 6821</a>
+         <!-- 
+           href="tel:+7299406821": Enlace para llamar desde móviles.
+         -->
+     </address>
+     <!-- Copyright -->
+     <p class="copyright">&copy; 2025 Súrtete</p>
+     
+     <!-- Redes sociales -->
+     <div class="social">
+         <a href="#" aria-label="Facebook">
+             <i class="fab fa-facebook"></i>
+         </a>
+         <a href="#" aria-label="Instagram">
+             <i class="fab fa-instagram"></i>
+         </a>
+         <a href="https://www.linkedin.com/in/yuritsa-paez-a85920121/" aria-label="LinkedIn">
+             <i class="fab fa-linkedin"></i>
+         </a>
+         
+     </div>
+
+   </div>
+ </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
